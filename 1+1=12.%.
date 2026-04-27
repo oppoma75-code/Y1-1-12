@@ -1,0 +1,6 @@
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/calls/apps \
+    -H 'Content-Type: application/json' \
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+    -d '{
+          "name": "production-realtime-app"
+        }'
